@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<title>Confirm Method</title>
+<script>
+question = "What is 10 +10 ?";
+answer= 20;
+response = prompt(question ,"0");
+for (count = 1; count<3 ;count ++) {
+if (response != answer) {
+if (confirm ("Wrong , Press Ok For Another Chance") ) { 
+response = prompt (question , "0");
+}
+else {
+alert ("Better Luck Next time");
+count = 3;
+}
+}
+else {
+alert ("Great !! You are Right ");
+count =3;
+}
+} 
+output =(Response == answer ) ? correct : incorrect ;
+document.write ("<BR>");
+document.write(output);
+
+
+
+
+</script>
+</head>
+<body>
+</body>
+</html>

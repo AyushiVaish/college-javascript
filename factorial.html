@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+<title>Factorial</title>
+<script>
+function fact() {
+
+fact=1;
+n=Number(document.getElementById("num").value);
+for(i=1;i<=n;i++) {
+
+fact=fact*i;
+ document.getElementById("answer").value=fact;
+
+}
+
+}
+
+</script>
+<body>
+Enter your number: <input id="num">
+<button onclick="fact()"> Answer </button >
+<input id= "answer">
+</body>
+</html>
